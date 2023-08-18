@@ -13,22 +13,17 @@ public class Sb{
     }
     else
     {
-        int a=n1+x;
+        int a=x;
+        int b=0;
         i=0;
-        while(i<1000)
+        while(a>=b)
         {
-            if(x+n1*i<n2*i)
-            {
-                System.out.print(i);
-                c++;
-                break;
-            }
+            a=n1+a;
+            b=n2+b;
             i++;
-            
         }
-        if(c==0)
         {
-          System.out.print("-1");
+          System.out.print(i);
         }
     }
         
